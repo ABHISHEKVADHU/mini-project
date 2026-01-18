@@ -1,13 +1,10 @@
-# Base image: Apache official
 FROM httpd:2.4
 
-# Agar html folder khali hai to use default Apache root
-# Optional: Agar chahe to later me index.html add kar sakte ho
-# COPY html/ /usr/local/apache2/htdocs/
+# Copy html folder content to Apache web root
+COPY html/ /usr/local/apache2/htdocs/
 
-# Expose port 80
 EXPOSE 80
 
-# Start Apache in foreground (default for httpd image)
+# Start Apache in foreground
 CMD ["httpd-foreground"]
 
