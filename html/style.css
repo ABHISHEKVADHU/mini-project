@@ -1,6 +1,7 @@
+/* Body and header */
 body {
   font-family: 'Arial', sans-serif;
-  background-color: #fdf6f0;
+  background-color: #FF6600; /* Orange background */
   margin: 0;
   padding: 0;
 }
@@ -8,28 +9,38 @@ body {
 header {
   background-color: #e23744;
   color: white;
-  padding: 20px;
+  padding: 25px 20px;
   text-align: center;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
 }
 
 header input {
-  margin-top: 10px;
-  padding: 10px;
+  margin-top: 15px;
+  padding: 12px;
   width: 60%;
-  border-radius: 5px;
+  max-width: 400px;
+  border-radius: 25px;
   border: none;
+  font-size: 1em;
 }
 
+/* Food list grid */
 .food-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
-  padding: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  padding: 25px;
 }
 
+/* Card style */
 .card {
   background-color: white;
-  border-radius: 15px;
+  border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 10px 20px rgba(0,0,0,0.2);
   transform-style: preserve-3d;
@@ -48,12 +59,13 @@ header input {
 }
 
 .card h3 {
-  margin: 10px;
+  margin: 12px;
   color: #e23744;
+  font-size: 1.4em;
 }
 
 .card p {
-  margin: 0 10px 10px 10px;
+  margin: 0 12px 12px 12px;
   font-weight: bold;
   color: #555;
 }
